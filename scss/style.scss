@@ -1,0 +1,83 @@
+// Подключаем шрифт
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,600,800&display=swap");
+
+// Обнуление стилей
+* {
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+// ========================================================================================================================================================
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	box-sizing: content-box; /* свойства width и height задают ширину и высоту содержимого и не включают в себя значения margin, padding и border */
+	max-width: 1200px; /* максимальная ширина контейнера/блока-секции (измеряем размер в макете)  */
+	margin: 0 auto;
+	padding: 15px;
+}
+.page {
+	flex: 1 1 auto;
+}
+// ========================================================================================================================================================
+.header {
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// gap: 50px;
+	}
+	// .header__menu
+	&__menu {}
+}
+.menu {
+	// .menu__body
+	&__body {}
+	// .menu__list
+	&__list {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+	}
+	// .menu__item
+	&__item {}
+	// .menu__link
+	&__link {}
+}
